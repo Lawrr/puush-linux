@@ -49,7 +49,7 @@ function puushFile ()
 	if [ ! -z "$fileURL" ]; then
 		#Copy link to clipboard, show notification
 		printf $fileURL | xclip -selection "clipboard"
-		notify-send -i "$( cd "$( dirname "$0" )" && pwd )/icon.png" -t 2000 "puush complete!" "$fileURL"
+		notify-send -t 2000 "puush complete!" "$fileURL"
 	fi
 }
 
